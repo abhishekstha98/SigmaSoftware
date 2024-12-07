@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UJNoV1YzIWE=",
+  "dgSpecHash": "tSkEML8t8Xs=",
   "success": true,
-  "projectFilePath": "G:\\Repos\\Job_Candidate_Hub\\Job_Candidate_Hub_API\\CandidateHubAPI.csproj",
+  "projectFilePath": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\CandidateHubAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abhis\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\abhis\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
