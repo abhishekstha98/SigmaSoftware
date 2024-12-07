@@ -39,5 +39,17 @@ namespace CandidateHubAPI.Tests
             var result = await controller.GetCandidateById(1);
             Assert.IsType<NotFoundObjectResult>(result);
         }
+
+        [Fact]
+        public async Task GetCandidateByEmail_ReturnsNotFound_WhenCandidateDoesNotExist()
+        {
+            var mockService = new Mock<ICandidateService>();
+            mockService.Setup(service => service.SearchCandidateByEmailAsync("john.doe@example.com"))
+                .ReturnsAsync((Candidate)null);
+
+            var controller = new CandidateController(mockService.Object);
+            var result = await controller.GetCandidateById(1);
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
     }
 }
