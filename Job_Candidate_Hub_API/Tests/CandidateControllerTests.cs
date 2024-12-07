@@ -27,5 +27,17 @@ namespace CandidateHubAPI.Tests
             var candidates = Assert.IsAssignableFrom<IEnumerable<Candidate>>(okResult.Value);
             Assert.Single(candidates);
         }
+
+        [Fact]
+        public async Task GetCandidateById_ReturnsNotFound_WhenCandidateDoesNotExist()
+        {
+            var mockService = new Mock<ICandidateService>();
+            mockService.Setup(service => service.GetCandidateByIdAsync(1))
+                .ReturnsAsync((Candidate)null);
+
+            var controller = new CandidateController(mockService.Object);
+            var result = await controller.GetCandidateById(1);
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
     }
 }
