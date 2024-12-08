@@ -137,5 +137,38 @@ namespace CandidateHubAPI.Services
             // Invalidate cache entries
             _cache.Remove("AllCandidates");
         }
+
+        public async Task ScheduleInterviewsAsync()
+        {
+            // Fetch all candidates whose SentEmail is false
+            var candidates = await _unitOfWork.Repository<Candidate>().ListAllAsync();
+            var candidatesToSchedule = new List<Candidate>();
+
+            foreach (var candidate in candidates)
+            {
+                if (!candidate.SentEmail)
+                {
+                    // Schedule an interview time for tomorrow
+                    candidate.InterviewTime = DateTime.Now.AddDays(1); // Example: Schedule for tomorrow
+                    candidate.SentEmail = true; // Mark as email sent
+                    candidatesToSchedule.Add(candidate);
+
+                    // Simulate sending a dummy email
+                    SendDummyEmail(candidate);
+                }
+            }
+
+            // Save updates to the database
+            if (candidatesToSchedule.Count > 0)
+            {
+                await _unitOfWork.SaveAsync();
+            }
+        }
+
+        private void SendDummyEmail(Candidate candidate)
+        {
+            // Simulated dummy email sending
+            Console.WriteLine($"Email sent to {candidate.Email}: Interview scheduled on {candidate.InterviewTime}");
+        }
     }
 }

@@ -11,6 +11,7 @@ namespace CandidateHubAPI.Services
         Task AddCandidateAsync(Candidate candidate);
         Task<Candidate> SearchCandidateByEmailAsync(string email);
         Task<Candidate> UpsertCandidateAsync(Candidate candidate);
+        Task ScheduleInterviewsAsync();
 
     }
 }

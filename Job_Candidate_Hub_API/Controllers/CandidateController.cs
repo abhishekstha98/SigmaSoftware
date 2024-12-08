@@ -51,16 +51,6 @@ namespace CandidateHubAPI.Controllers
             return Ok(candidate);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> AddCandidate([FromBody] Candidate candidate)
-        //{
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
-
-        //    await _candidateService.AddCandidateAsync(candidate);
-        //    return Ok(candidate);
-        //}
-
         [HttpPost]
         public async Task<IActionResult> UpsertCandidate([FromBody] Candidate candidate)
         {
@@ -76,6 +66,20 @@ namespace CandidateHubAPI.Controllers
             catch (Exception ex)
             {
                 return StatusCode(500, new { Message = "An error occurred while processing the request.", Details = ex.Message });
+            }
+        }
+
+        [HttpPost("schedule-interviews")]
+        public async Task<IActionResult> ScheduleInterviews()
+        {
+            try
+            {
+                await _candidateService.ScheduleInterviewsAsync();
+                return Ok(new { Message = "Interviews scheduled and emails sent to candidates who haven't received emails." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An error occurred while scheduling interviews.", Details = ex.Message });
             }
         }
 

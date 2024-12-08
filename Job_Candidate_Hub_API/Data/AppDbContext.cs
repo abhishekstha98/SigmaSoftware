@@ -18,17 +18,19 @@ namespace CandidateHubAPI.Data
         {
             modelBuilder.Entity<Candidate>(entity =>
             {
-                entity.HasKey(e => e.Id).HasName("PK__Candidat__3214EC079063C2E6");
+                entity.HasKey(e => e.Id).HasName("PK__Candidat__3214EC074142091E");
 
-                entity.HasIndex(e => e.Email, "UQ__Candidat__A9D105343CD7E369").IsUnique();
+                entity.HasIndex(e => e.Email, "UQ__Candidat__A9D1053448B6F1EE").IsUnique();
 
                 entity.Property(e => e.CallTimeInterval).HasMaxLength(50);
                 entity.Property(e => e.Email).HasMaxLength(255);
                 entity.Property(e => e.FirstName).HasMaxLength(100);
                 entity.Property(e => e.GitHubUrl).HasMaxLength(500);
+                entity.Property(e => e.InterviewTime).HasColumnType("datetime");
                 entity.Property(e => e.LastName).HasMaxLength(100);
                 entity.Property(e => e.LinkedInUrl).HasMaxLength(500);
                 entity.Property(e => e.PhoneNumber).HasMaxLength(15);
+                entity.Property(e => e.SentEmail).HasColumnName("SentEmail ");
             });
 
             OnModelCreatingPartial(modelBuilder);
