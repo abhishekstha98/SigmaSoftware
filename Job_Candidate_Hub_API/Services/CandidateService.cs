@@ -21,13 +21,10 @@ namespace CandidateHubAPI.Services
         {
             const string cacheKey = "AllCandidates";
 
-            // Check if the data is already in the cache
             if (!_cache.TryGetValue(cacheKey, out IEnumerable<Candidate> candidates))
             {
-                // Fetch data from the database
                 candidates = await _unitOfWork.Repository<Candidate>().ListAllAsync();
 
-                // Cache the data for 10 minutes
                 var cacheOptions = new MemoryCacheEntryOptions()
                     .SetSlidingExpiration(TimeSpan.FromMinutes(10));
 
@@ -43,12 +40,10 @@ namespace CandidateHubAPI.Services
 
             if (existingCandidate == null)
             {
-                // Add new candidate
                 await _unitOfWork.Repository<Candidate>().AddAsync(candidate);
             }
             else
             {
-                // Update existing candidate with provided values, retain old values for empty fields
                 existingCandidate.FirstName = !string.IsNullOrWhiteSpace(candidate.FirstName)
                     ? candidate.FirstName
                     : existingCandidate.FirstName;
@@ -82,7 +77,6 @@ namespace CandidateHubAPI.Services
 
             await _unitOfWork.SaveAsync();
 
-            // Invalidate relevant cache entries
             _cache.Remove($"Candidate_{candidate.Email}");
             _cache.Remove("AllCandidates");
 
@@ -134,13 +128,11 @@ namespace CandidateHubAPI.Services
             await _unitOfWork.Repository<Candidate>().AddAsync(candidate);
             await _unitOfWork.SaveAsync();
 
-            // Invalidate cache entries
             _cache.Remove("AllCandidates");
         }
 
         public async Task ScheduleInterviewsAsync()
         {
-            // Fetch all candidates whose SentEmail is false
             var candidates = await _unitOfWork.Repository<Candidate>().ListAllAsync();
             var candidatesToSchedule = new List<Candidate>();
 
@@ -148,17 +140,14 @@ namespace CandidateHubAPI.Services
             {
                 if (!candidate.SentEmail)
                 {
-                    // Schedule an interview time for tomorrow
-                    candidate.InterviewTime = DateTime.Now.AddDays(1); // Example: Schedule for tomorrow
-                    candidate.SentEmail = true; // Mark as email sent
+                    candidate.InterviewTime = DateTime.Now.AddDays(1); 
+                    candidate.SentEmail = true;
                     candidatesToSchedule.Add(candidate);
 
-                    // Simulate sending a dummy email
                     SendDummyEmail(candidate);
                 }
             }
 
-            // Save updates to the database
             if (candidatesToSchedule.Count > 0)
             {
                 await _unitOfWork.SaveAsync();
@@ -167,7 +156,6 @@ namespace CandidateHubAPI.Services
 
         private void SendDummyEmail(Candidate candidate)
         {
-            // Simulated dummy email sending
             Console.WriteLine($"Email sent to {candidate.Email}: Interview scheduled on {candidate.InterviewTime}");
         }
     }

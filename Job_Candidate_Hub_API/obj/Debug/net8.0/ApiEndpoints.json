@@ -43,6 +43,16 @@
   },
   {
     "ContainingType": "CandidateHubAPI.Controllers.CandidateController",
+    "Method": "ScheduleInterviews",
+    "RelativePath": "api/Candidate/schedule-interviews",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.CandidateController",
     "Method": "SearchByEmail",
     "RelativePath": "api/Candidate/search",
     "HttpMethod": "GET",

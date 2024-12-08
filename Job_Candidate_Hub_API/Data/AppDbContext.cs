@@ -33,6 +33,15 @@ namespace CandidateHubAPI.Data
                 entity.Property(e => e.SentEmail).HasColumnName("SentEmail ");
             });
 
+            modelBuilder.Entity<OnboardedCandidate>(entity =>
+            {
+                entity.HasKey(e => e.TempEmployeeId).HasName("PK__Onboarde__6015F20E833049D4");
+
+                entity.Property(e => e.Email).HasMaxLength(255);
+                entity.Property(e => e.FullName).HasMaxLength(200);
+                entity.Property(e => e.OnboardedDate).HasColumnType("datetime");
+            });
+
             OnModelCreatingPartial(modelBuilder);
         }
 

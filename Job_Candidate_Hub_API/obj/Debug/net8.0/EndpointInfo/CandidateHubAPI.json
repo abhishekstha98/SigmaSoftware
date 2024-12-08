@@ -89,6 +89,18 @@
           }
         }
       }
+    },
+    "/api/Candidate/schedule-interviews": {
+      "post": {
+        "tags": [
+          "Candidate"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -131,6 +143,14 @@
           "comment": {
             "type": "string",
             "nullable": true
+          },
+          "interviewTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "sentEmail": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
