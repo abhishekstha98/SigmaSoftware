@@ -101,6 +101,34 @@
           }
         }
       }
+    },
+    "/api/Candidate/update-selection": {
+      "post": {
+        "tags": [
+          "Candidate"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "isSelected",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

@@ -12,6 +12,7 @@ namespace CandidateHubAPI.Services
         Task<Candidate> SearchCandidateByEmailAsync(string email);
         Task<Candidate> UpsertCandidateAsync(Candidate candidate);
         Task ScheduleInterviewsAsync();
+        Task<bool> UpdateSelectionStatusAsync(string email, bool isSelected);
 
     }
 }

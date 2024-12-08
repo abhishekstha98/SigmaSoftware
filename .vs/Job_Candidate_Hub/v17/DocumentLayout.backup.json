@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ICandidateService.cs",
               "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
               "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CandidateController.cs",
               "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
               "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
@@ -66,27 +66,27 @@
               "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\CandidateService.cs",
               "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\CandidateService.cs",
               "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\CandidateService.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAuwIcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAIAwwKIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T04:04:03.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAlwA0AAADsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T04:03:33.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\appsettings.json",
               "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\appsettings.json",

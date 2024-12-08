@@ -158,5 +158,26 @@ namespace CandidateHubAPI.Services
         {
             Console.WriteLine($"Email sent to {candidate.Email}: Interview scheduled on {candidate.InterviewTime}");
         }
+
+        public async Task<bool> UpdateSelectionStatusAsync(string email, bool isSelected)
+        {
+            var candidate = await _unitOfWork.Repository<Candidate>().GetByEmailAsync(email);
+            if (candidate == null) return false;
+
+            if (isSelected)
+            {
+                var onboardedCandidate = new OnboardedCandidate
+                {
+                    Email = candidate.Email,
+                    FullName = $"{candidate.FirstName} {candidate.LastName}",
+                    OnboardedDate = DateTime.Now
+                };
+
+                await _unitOfWork.Repository<OnboardedCandidate>().AddAsync(onboardedCandidate);
+            }
+
+            await _unitOfWork.SaveAsync();
+            return true;
+        }
     }
 }

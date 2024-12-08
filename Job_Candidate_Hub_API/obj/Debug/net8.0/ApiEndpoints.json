@@ -66,5 +66,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.CandidateController",
+    "Method": "UpdateSelectionStatus",
+    "RelativePath": "api/Candidate/update-selection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isSelected",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

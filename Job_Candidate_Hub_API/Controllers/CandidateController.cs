@@ -83,5 +83,14 @@ namespace CandidateHubAPI.Controllers
             }
         }
 
+
+        [HttpPost("update-selection")]
+        public async Task<IActionResult> UpdateSelectionStatus([FromQuery] string email, [FromQuery] bool isSelected)
+        {
+            var success = await _candidateService.UpdateSelectionStatusAsync(email, isSelected);
+            if (!success) return NotFound(new { Message = "Candidate not found." });
+
+            return Ok(new { Message = "Candidate selection status updated." });
+        }
     }
 }
