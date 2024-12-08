@@ -158,3 +158,27 @@ GO
 
 ALTER TABLE [dbo].[OnboardedCandidates]  WITH CHECK ADD FOREIGN KEY([Email])
 REFERENCES [dbo].[Candidates] ([Email])
+
+
+CREATE TABLE [dbo].[InterviewScores](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CandidateId] [int] NOT NULL,
+	[TechnicalScore] [int] NOT NULL,
+	[CommunicationScore] [int] NOT NULL,
+	[ProblemSolvingScore] [int] NOT NULL,
+	[TotalScore]  AS (([TechnicalScore]+[CommunicationScore])+[ProblemSolvingScore]) PERSISTED,
+	[Comments] [nvarchar](500) NULL,
+	[ScoredOn] [datetime] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[InterviewScores] ADD  DEFAULT (getdate()) FOR [ScoredOn]
+GO
+
+ALTER TABLE [dbo].[InterviewScores]  WITH CHECK ADD FOREIGN KEY([CandidateId])
+REFERENCES [dbo].[Candidates] ([Id])
+ON DELETE CASCADE
