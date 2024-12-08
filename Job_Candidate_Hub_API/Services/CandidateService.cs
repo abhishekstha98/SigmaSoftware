@@ -1,5 +1,6 @@
 ﻿using CandidateHubAPI.Models;
 using CandidateHubAPI.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -103,25 +104,22 @@ namespace CandidateHubAPI.Services
             return candidate;
         }
 
-        public async Task<Candidate> SearchCandidateByEmailAsync(string email)
+        public async Task<IEnumerable<Candidate>> SearchCandidatesAsync(string searchTerm)
         {
-            var cacheKey = $"Candidate_{email}";
+            if (string.IsNullOrWhiteSpace(searchTerm))
+                return new List<Candidate>();
 
-            if (!_cache.TryGetValue(cacheKey, out Candidate candidate))
-            {
-                candidate = await _unitOfWork.Repository<Candidate>().GetByEmailAsync(email);
-
-                if (candidate != null)
-                {
-                    var cacheOptions = new MemoryCacheEntryOptions()
-                        .SetSlidingExpiration(TimeSpan.FromMinutes(10));
-
-                    _cache.Set(cacheKey, candidate, cacheOptions);
-                }
-            }
-
-            return candidate;
+            return await _unitOfWork.Repository<Candidate>()
+                .GetQueryable()
+                .Where(c =>
+                    EF.Functions.Like(c.FirstName, $"%{searchTerm}%") ||
+                    EF.Functions.Like(c.LastName, $"%{searchTerm}%") ||
+                    EF.Functions.Like(c.Email, $"%{searchTerm}%") ||
+                    EF.Functions.Like(c.PhoneNumber, $"%{searchTerm}%") ||
+                    EF.Functions.Like(c.Comment, $"%{searchTerm}%"))
+                .ToListAsync();
         }
+
 
         public async Task AddCandidateAsync(Candidate candidate)
         {

@@ -9,6 +9,8 @@ namespace CandidateHubAPI.Data
 
 
         public virtual DbSet<Candidate> Candidates { get; set; }
+        public virtual DbSet<OnboardedCandidate> OnboardedCandidates { get; set; }
+        public virtual DbSet<InterviewScore> InterviewScores { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -40,6 +42,17 @@ namespace CandidateHubAPI.Data
                 entity.Property(e => e.Email).HasMaxLength(255);
                 entity.Property(e => e.FullName).HasMaxLength(200);
                 entity.Property(e => e.OnboardedDate).HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<InterviewScore>(entity =>
+            {
+                entity.HasKey(e => e.Id).HasName("PK__Intervie__3214EC070BA1A6DB");
+
+                entity.Property(e => e.Comments).HasMaxLength(500);
+                entity.Property(e => e.ScoredOn)
+                    .HasDefaultValueSql("(getdate())")
+                    .HasColumnType("datetime");
+                entity.Property(e => e.TotalScore).HasComputedColumnSql("(([TechnicalScore]+[CommunicationScore])+[ProblemSolvingScore])", true);
             });
 
             OnModelCreatingPartial(modelBuilder);

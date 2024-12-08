@@ -9,7 +9,7 @@ namespace CandidateHubAPI.Services
         Task<IEnumerable<Candidate>> GetAllCandidatesAsync();
         Task<Candidate> GetCandidateByIdAsync(int id);
         Task AddCandidateAsync(Candidate candidate);
-        Task<Candidate> SearchCandidateByEmailAsync(string email);
+        Task<IEnumerable<Candidate>> SearchCandidatesAsync(string searchTerm);
         Task<Candidate> UpsertCandidateAsync(Candidate candidate);
         Task ScheduleInterviewsAsync();
         Task<bool> UpdateSelectionStatusAsync(string email, bool isSelected);

@@ -1,26 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SigmaSoftware\\",
+  "WorkspaceRootPath": "D:\\Repo\\SigmaSoftware\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\controllers\\interviewscorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\controllers\\interviewscorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\services\\interviewscoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\services\\interviewscoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\services\\iinterviewscoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\services\\iinterviewscoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\services\\icandidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\services\\icandidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\services\\icandidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\sigmasoftware\\job_candidate_hub_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\services\\candidateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\controllers\\candidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\repositories\\icandidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\repositories\\icandidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|d:\\repo\\sigmasoftware\\job_candidate_hub_api\\repositories\\candidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F49165-7028-428C-8998-F283909BD4BF}|Job_Candidate_Hub_API\\CandidateHubAPI.csproj|solutionrelative:job_candidate_hub_api\\repositories\\candidaterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICandidateService.cs",
-              "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
-              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
-              "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
-              "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Program.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Program.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Program.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:06:27.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CandidateController.cs",
-              "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
-              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
-              "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
-              "RelativeToolTip": "Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:05:33.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CandidateService.cs",
-              "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\CandidateService.cs",
-              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\CandidateService.cs",
-              "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\CandidateService.cs",
-              "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\CandidateService.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAIAwwKIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:04:03.382Z",
+              "WhenOpened": "2024-12-08T12:05:06.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Job_Candidate_Hub_API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAlwA0AAADsAAAAAAAAAA==",
+              "Title": "InterviewScoreService.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\InterviewScoreService.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\InterviewScoreService.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\InterviewScoreService.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\InterviewScoreService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAhwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T04:03:33.548Z",
+              "WhenOpened": "2024-12-08T12:03:27.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IInterviewScoreService.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\IInterviewScoreService.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\IInterviewScoreService.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\IInterviewScoreService.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\IInterviewScoreService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:03:19.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InterviewScoreController.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\InterviewScoreController.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Controllers\\InterviewScoreController.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\InterviewScoreController.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Controllers\\InterviewScoreController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAuwEIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:02:28.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICandidateRepository.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Repositories\\ICandidateRepository.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Repositories\\ICandidateRepository.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Repositories\\ICandidateRepository.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Repositories\\ICandidateRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:44:52.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CandidateRepository.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Repositories\\CandidateRepository.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Repositories\\CandidateRepository.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Repositories\\CandidateRepository.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Repositories\\CandidateRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:42:00.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICandidateService.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\ICandidateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:41:37.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CandidateController.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Controllers\\CandidateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:41:15.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\appsettings.json",
-              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\appsettings.json",
-              "ToolTip": "D:\\SigmaSoftware\\Job_Candidate_Hub_API\\appsettings.json",
-              "RelativeToolTip": "Job_Candidate_Hub_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-08T04:00:50.886Z",
+              "Title": "CandidateService.cs",
+              "DocumentMoniker": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\CandidateService.cs",
+              "RelativeDocumentMoniker": "Job_Candidate_Hub_API\\Services\\CandidateService.cs",
+              "ToolTip": "D:\\Repo\\SigmaSoftware\\Job_Candidate_Hub_API\\Services\\CandidateService.cs",
+              "RelativeToolTip": "Job_Candidate_Hub_API\\Services\\CandidateService.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAhwKYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T11:37:21.276Z",
               "EditorCaption": ""
             }
           ]

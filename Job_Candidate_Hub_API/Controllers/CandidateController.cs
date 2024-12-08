@@ -35,20 +35,21 @@ namespace CandidateHubAPI.Controllers
         }
 
         [HttpGet("search")]
-        public async Task<IActionResult> SearchByEmail([FromQuery] string email)
+        public async Task<IActionResult> SearchCandidates([FromQuery] string searchTerm)
         {
-            if (string.IsNullOrWhiteSpace(email))
+            try
             {
-                return BadRequest(new { Message = "Email is required for search." });
-            }
+                var results = await _candidateService.SearchCandidatesAsync(searchTerm);
 
-            var candidate = await _candidateService.SearchCandidateByEmailAsync(email);
-            if (candidate == null)
+                if (!results.Any())
+                    return NotFound(new { Message = "No candidates match the search term." });
+
+                return Ok(results);
+            }
+            catch (Exception ex)
             {
-                return NotFound(new { Message = "Candidate not found." });
+                return StatusCode(500, new { Message = "An error occurred while searching for candidates.", Details = ex.Message });
             }
-
-            return Ok(candidate);
         }
 
         [HttpPost]

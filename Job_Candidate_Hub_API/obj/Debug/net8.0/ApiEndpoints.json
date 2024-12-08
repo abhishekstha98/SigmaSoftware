@@ -53,14 +53,14 @@
   },
   {
     "ContainingType": "CandidateHubAPI.Controllers.CandidateController",
-    "Method": "SearchByEmail",
+    "Method": "SearchCandidates",
     "RelativePath": "api/Candidate/search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
+        "Name": "searchTerm",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -84,6 +84,106 @@
         "Name": "isSelected",
         "Type": "System.Boolean",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.InterviewScoreController",
+    "Method": "GetAllScores",
+    "RelativePath": "api/InterviewScore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.InterviewScoreController",
+    "Method": "AddScore",
+    "RelativePath": "api/InterviewScore",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "score",
+        "Type": "CandidateHubAPI.Models.InterviewScore",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.InterviewScoreController",
+    "Method": "GetScoreById",
+    "RelativePath": "api/InterviewScore/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.InterviewScoreController",
+    "Method": "UpdateScore",
+    "RelativePath": "api/InterviewScore/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "score",
+        "Type": "CandidateHubAPI.Models.InterviewScore",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.InterviewScoreController",
+    "Method": "DeleteScore",
+    "RelativePath": "api/InterviewScore/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CandidateHubAPI.Controllers.InterviewScoreController",
+    "Method": "GetScoresByCandidateEmail",
+    "RelativePath": "api/InterviewScore/candidate/email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

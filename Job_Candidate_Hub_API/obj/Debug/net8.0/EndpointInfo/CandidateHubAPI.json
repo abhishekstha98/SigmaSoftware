@@ -76,7 +76,7 @@
         ],
         "parameters": [
           {
-            "name": "email",
+            "name": "searchTerm",
             "in": "query",
             "schema": {
               "type": "string"
@@ -120,6 +120,162 @@
             "in": "query",
             "schema": {
               "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/InterviewScore": {
+      "get": {
+        "tags": [
+          "InterviewScore"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "InterviewScore"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterviewScore"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterviewScore"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterviewScore"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/InterviewScore/{id}": {
+      "get": {
+        "tags": [
+          "InterviewScore"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "InterviewScore"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterviewScore"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterviewScore"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InterviewScore"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "InterviewScore"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/InterviewScore/candidate/email/{email}": {
+      "get": {
+        "tags": [
+          "InterviewScore"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -179,6 +335,45 @@
           },
           "sentEmail": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "InterviewScore": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "technicalScore": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "communicationScore": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "problemSolvingScore": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalScore": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "comments": {
+            "type": "string",
+            "nullable": true
+          },
+          "scoredOn": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

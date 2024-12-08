@@ -46,5 +46,11 @@ namespace CandidateHubAPI.Repositories
         {
             _dbSet.Remove(entity);
         }
+
+        public IQueryable<T> GetQueryable()
+        {
+            return _dbSet.AsQueryable();
+        }
+
     }
 }
